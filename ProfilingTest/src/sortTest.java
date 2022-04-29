@@ -16,21 +16,24 @@ public class sortTest {
 //        for bubble sort
         int n = temp_list.length;
 
-        System.out.println("Given Array in Bubble Sort");
-        printArray(temp_list);
-        BubbleSortClass ob = new BubbleSortClass();
-        ob.bubbleSort(temp_list, n);
-        System.out.println("\nSorted array in bubble sort\n \n \n \n");
-        printArray(temp_list);
-
-//        temp_list = random_list;
-//        for merge_sort
+        //        for merge_sort
         System.out.println("Given Array in Merge Sort");
-        printArray(temp_list2);
+//        printArray(temp_list2);
         MergeSort ms = new MergeSort();
         ms.sort(temp_list2, 0, temp_list2.length - 1);
         System.out.println("\nSorted array");
-        printArray(temp_list2);
+//        printArray(temp_list2);
+
+
+        System.out.println("Given Array in Bubble Sort");
+//        printArray(temp_list);
+        BubbleSortClass ob = new BubbleSortClass();
+        ob.bubbleSort(temp_list, n);
+        System.out.println("\nSorted array in bubble sort\n \n \n \n");
+//        printArray(temp_list);
+
+//        temp_list = random_list;
+
     }
     static void printArray(int arr[])
     {
